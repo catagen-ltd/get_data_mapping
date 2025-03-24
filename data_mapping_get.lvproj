@@ -3,7 +3,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
-	<Property Name="varPersistentID:{B2C8B36D-5CF8-4997-BDF8-B580907591D1}" Type="Ref">/My Computer/Test Data.lvlib/testdata1</Property>
+	<Property Name="varPersistentID:{B2C8B36D-5CF8-4997-BDF8-B580907591D1}" Type="Ref">/My Computer/get_data_mapper/Test Data.lvlib/testdata1</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -22,11 +22,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="get_data_mapper Module" Type="Folder">
-			<Item Name="get_data_mapper.lvlib" Type="Library" URL="../Libraries/get_data_mapper/get_data_mapper.lvlib"/>
+		<Item Name="get_data_mapper" Type="Folder" URL="../Libraries/get_data_mapper">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="Test Data.lvlib" Type="Library" URL="../Libraries/get_data_mapper/Test Data.lvlib"/>
-		<Item Name="Test get_data_mapper API.vi" Type="VI" URL="../Libraries/get_data_mapper/Test get_data_mapper API.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AddNamedRendezvousPrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/AddNamedRendezvousPrefix.vi"/>
